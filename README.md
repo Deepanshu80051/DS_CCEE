@@ -9,14 +9,13 @@ Worst Case - Maximum time (Big-O)
 
 Common Complexities (Fast → Slow):
 
-O(1) - Constant - Array indexing
-O(log n) - Logarithmic - Binary search
-O(n) - Linear - Linear search
-O(n log n) - Linearithmic - Merge sort, Quick sort
-O(n²) - Quadratic - Bubble sort, Selection sort
-O(2ⁿ) - Exponential - Fibonacci (recursive)
-O(n!) - Factorial - Traveling salesman (brute force)
-
+1. O(1) - Constant - Array indexing
+2. O(log n) - Logarithmic - Binary search
+3. O(n) - Linear - Linear search
+4. O(n log n) - Linearithmic - Merge sort, Quick sort4
+5. O(n²) - Quadratic - Bubble sort, Selection sort
+6. O(2ⁿ) - Exponential - Fibonacci (recursive)
+7. (n!) - Factorial - Traveling salesman (brute force)
 
 # ADT vs Data Structure (MCQ Important):
 
@@ -111,8 +110,8 @@ D) BFS traversal
   Dynamic Array
   Linked List
 
-* Polish Notation
-
+  
+  ## Polish Notation
 The method of wirting operators of an expression either before their operands or after them is called polish notation
 
 1. infix notation  --  A+B
