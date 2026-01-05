@@ -57,8 +57,30 @@ arr =new int [2]
        arr[1]=30;
        SOP(arr.length)  //2
 
+2-D array :- it is array of array
 
+* int arr[][] ; // sahi
+* int arr[][]=new int [3][4]; // sahi
+*int arr[][]=new int [][];  // error
+ * int arr[][]=new int [][4]; // error
+ * int arr[][]=new int [3][];  // sahi
 
+ * eg :-
+    int arr[][]=new int [3][];
+    SOP(arr[0][0]);  // runtime p error
+   // nullpointer exception
+
+* eg :-
+    int arr[][]=new int [3][];
+    SOP(arr[0]);
+ o/p- null
+
+* eg :-
+     int arr[][]=new int [3][];
+    SOP(arr[0].length);
+  // null pointer exception
+
+  
 # Stack  - LIFO  
 Har ek method ka TC-O(i)
 Stack Overflow & Underflow:
