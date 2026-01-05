@@ -33,6 +33,32 @@ B) Logical operations ✓ (Correct)
 C) Memory allocation
 D) Programming language
 
+# Array
+
+Initializing array
+
+int [] arr=new int [] {10,20,30,40};  // kar sakte h
+int [] arr= {10,20,30,40};  // kar sakte h
+int [] arr=new int [4] {10,20,30,40};  // nahi kar kar sakte h
+
+* you cannot mention size and values together
+* Java me Object and array - Dyanically bante h - 0
+* array is not blank - by default 0
+* local - blank
+* instance - 1
+* eg :- int arr[]
+        arr[0] =10;
+       arr[1]=30;
+       SOP(arr.length)
+ // error aaye ga black h na
+* eg:- int arr[];
+arr =new int [2] 
+        arr[0] =10;
+       arr[1]=30;
+       SOP(arr.length)  //2
+
+
+
 # Stack  - LIFO  
 Har ek method ka TC-O(i)
 Stack Overflow & Underflow:
