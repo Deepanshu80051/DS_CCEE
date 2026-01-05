@@ -82,7 +82,7 @@ arr =new int [2]
 
   
 # Stack  - LIFO  
-Har ek method ka TC-O(i)
+Har ek method ka TC-O(1)
 Stack Overflow & Underflow:
 
 Overflow - Full stack mein push karne ki koshish
@@ -94,6 +94,34 @@ A) CPU Scheduling
 B) Function call management ✓ (Correct)
 C) Printer spooling
 D) BFS traversal
+
+* :- eg stack
+  Traveling bag
+  Plate
+  Recursion/ fucntioncall
+
+*  Operations :-
+    
+   Insert - Push()
+   Delete - Pop()
+   View top element - Peek()
+  
+*  Ways to implement Stack :-
+  Array
+  Dynamic Array
+  Linked List
+
+* Polish Notation
+
+The method of wirting operators of an expression either before their operands or after them is called polish notation
+
+1. infix notation  --  A+B
+2. Prefix notation -- +AB
+3. Postfix noation  -- AB+
+
+
+
+
 
 # Queue - FIFO
 
