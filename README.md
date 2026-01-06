@@ -132,11 +132,70 @@ Circular queue formula: (index + 1) % SIZE
 Array indexing: O(1)
 All stack/queue basic operations: O(1)
 
+# Linked List
 
+##difference
+1. Memory Allocation:
+Array:
 
+Contiguous memory..
+Compile-time allocation (static)..
+Fixed size..
 
+Linked List:
 
+Non-contiguous (scattered)..
+Runtime allocation (dynamic)..
+Variable size..
+2. Access Time:
+Array:
 
+Random access - O(1)..
+Direct calculation: base_address + (index × size)..
 
+Linked List:
 
+Sequential access - O(n)..
+Traverse karna padta hai..
 
+https://docs.google.com/document/d/17MqAGK9gW4SXz6yUPysh1z1ildN-nxefVbKycbH8wxg/edit?usp=sharing
+
+### Node-based Storage
+How Nodes are Stored:
+
+1. **Dynamic Allocation** - `malloc()` ya `new` use karke
+2. **Heap Memory** - Nodes heap mein allocate hote hain
+3. **Scattered** - Kahi bhi memory mein ho sakte hain
+4. **Pointer Connection** - Next pointer se linked
+
+### Memory Management (MCQ Important):
+
+**Array**:
+- Stack or static memory
+- Contiguous allocation
+- Cache-friendly (spatial locality)
+- Fixed size at compile time
+
+**Linked List**:
+- Heap memory
+- Random allocation
+- Not cache-friendly
+- Dynamic size at runtime
+
+  #### Example Calculation:
+```
+Singly Linked List with int data:
+- Data: 4 bytes
+- Pointer: 8 bytes (64-bit)
+- Total per node: 12 bytes
+100 nodes = 1200 bytes
+```
+####  Memory Leak:
+- Node delete karte time free() karna zaroori
+- Nahi toh memory leak hoga
+- Pointer lost but memory not freed
+
+Q: Which uses circular linked list?
+A: Round-robin CPU scheduling
+Q: Singly linked list with 50 nodes (int data, 64-bit system)?
+A: 50 × (4 + 8) = 600 bytes
