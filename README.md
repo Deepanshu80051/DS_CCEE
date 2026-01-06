@@ -199,3 +199,52 @@ Q: Which uses circular linked list?
 A: Round-robin CPU scheduling
 Q: Singly linked list with 50 nodes (int data, 64-bit system)?
 A: 50 × (4 + 8) = 600 bytes
+
+## Recursion
+Why Important? (MCQ ke liye yaad rakho):
+
+Termination condition - Recursion rokta hai..
+Prevents infinite loop - Stack overflow se bachata hai..
+Simplest case - Jo direct solve ho jaye..
+
+* What Happens Without Base Condition?
+ ```
+ void infiniteRecursion(int n) {
+    printf("%d ", n);
+    infiniteRecursion(n-1);  // NO BASE CONDITION!
+}
+// Result: Stack Overflow Error
+```
+
+### Key Points (MCQ ke liye):
+
+1. Direct recursion = Function calls itself directly
+2. Tail recursion is most optimizable
+3. Tree recursion creates exponential calls
+4. Linear recursion = single recursive call
+5. Head vs Tail depends on call position
+6. All these are direct recursion types
+
+### Important Points (MCQ ke liye):
+
+1. **Indirect recursion involves 2+ functions**
+2. **Creates circular calling pattern**
+3. **Each function needs base condition**
+4. **More complex than direct recursion**
+5. **Harder to trace and debug**
+6. **Stack contains frames from multiple functions**
+7. **Used in: State machines, parsers, game AI**
+
+### Common MCQ Pattern:
+```
+Q: What type of recursion?
+void fun1(int n) {
+    if(n>0) fun2(n-1);
+}
+void fun2(int n) {
+    if(n>0) fun1(n-1);
+}
+
+Answer: Indirect Recursion
+```
+* Stack frame (Activation record) har function call ke liye create hota hai
