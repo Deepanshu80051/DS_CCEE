@@ -248,3 +248,106 @@ void fun2(int n) {
 Answer: Indirect Recursion
 ```
 * Stack frame (Activation record) har function call ke liye create hota hai
+
+## Searching 
+
+1. Linear Search
+   * Best Case: O(1) - element pehle position par ho
+   * Worst Case: O(n) - element last mein ya exist hi na kare
+   * Average Case: O(n)
+2. Binary Search
+  *  Best Case: O(1) - middle element ho
+  * Worst Case: O(log n) - divide and conquer
+  * Average Case: O(log n)
+  * Kya binary search unsorted array par kaam karega?
+   Answer: NO - pehle sort karna padega
+
+## Sorting Algorithms
+🫧 Bubble Sort
+Concept (Hindi):
+Bubble sort mein adjacent elements ko compare karke swap karte hain. Sabse bada element "bubble" ki tarah end tak pahunch jata hai har pass mein..
+* Best Case: O(n) - already sorted (with optimization)
+* Worst Case: O(n²) - reverse sorted
+* Average Case: O(n²)
+  
+🎯 Selection Sort
+Concept (Hindi):
+Har iteration mein unsorted portion se minimum element select karo aur usse starting position par swap karo..
+* Best, Worst, Average: O(n²) - always same
+📥 Insertion Sort
+Concept (Hindi):
+Cards arrange karne jaisa - ek element uthao aur sorted portion mein sahi jagah insert karo..
+* Best Case: O(n) - already sorted
+* Worst Case: O(n²) - reverse sorted
+* Average Case: O(n²)
+
+  MCQ Pattern:
+Kaunsa sort nearly sorted data ke liye best hai?..
+Answer: Insertion Sort (O(n) best case)..
+
+🔀 Merge Sort (Divide & Conquer
+* Best, Worst, Average: O(n log n) - always consistent
+* Space Complexity: O(n)..
+
+ 🔀Quick Sort (Divide & Conquer)
+ * Best Case: O(n log n) - good pivot selection
+* Worst Case: O(n²) - already sorted array (poor pivot)
+* Average Case: O(n log n)
+* Space Complexity: O(log n) - recursion stack..
+
+🏔️ Heap Sort
+* Best, Worst, Average: O(n log n)
+* SC O(1)
+  
+https://docs.google.com/document/d/17MqAGK9gW4SXz6yUPysh1z1ildN-nxefVbKycbH8wxg/edit?usp=sharing
+
+🎓 IMPORTANT MCQ CONCEPTS
+1. Stability
+Stable: Equal elements ki relative order preserve rahti hai
+
+Stable: Bubble, Insertion, Merge
+Unstable: Selection, Quick, Heap
+
+2. In-place vs Not In-place
+In-place: Extra space O(1) chahiye
+
+In-place: Bubble, Selection, Insertion, Quick, Heap
+Not in-place: Merge (needs O(n))
+
+3. Adaptive
+Adaptive: Already sorted data ko fast process kare
+
+Adaptive: Bubble (optimized), Insertion
+Non-adaptive: Selection, Merge, Heap, Quick
+
+4. Online
+Online: Ek-ek input process kar sake
+
+Online: Insertion
+Offline: Baaki sab..
+
+💡 SAMPLE MCQs
+Q1: 10 elements ko binary search mein maximum kitne comparisons?
+
+A) 10  B) 4  C) 3  D) 5
+Answer: B (log₂10 ≈ 3.32, ceiling = 4)
+
+Q2: Kaunsa sort stable nahi hai?
+
+A) Merge  B) Bubble  C) Quick  D) Insertion
+Answer: C (Quick Sort)
+
+Q3: Nearly sorted array ke liye best?
+
+A) Quick  B) Merge  C) Insertion  D) Selection
+Answer: C (Insertion Sort - O(n))
+
+Q4: Guaranteed O(n log n) aur stable sort?
+
+A) Quick  B) Heap  C) Merge  D) Selection
+Answer: C (Merge Sort)
+
+Q5: 1 million elements, memory tight, fast chahiye?
+
+A) Merge  B) Quick  C) Heap  D) Bubble
+Answer: B or C (Quick fast, Heap guaranteed + less space)
